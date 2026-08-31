@@ -1,0 +1,8 @@
+Scorecard dimension,Core question,Studies (n),% of 729
+XAI,Why did the model predict this?,203,27.8
+UQ,How uncertain is the prediction?,43,5.9
+calibration,Is stated confidence meaningful?,9,1.2
+robustness,Stable under perturbation?,0,0.0
+OOD/transfer,Valid on unseen chemistry?,58,8.0
+ext-val,Independent data used?,27,3.7
+repro-signal,Reproducible by others?,7,1.0

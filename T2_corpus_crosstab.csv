@@ -1,0 +1,12 @@
+Material,prediction,optimization,multi-objective-optimization,inverse-design,classification,microstructure/image-analysis,prediction+UQ,experiment-selection,Total
+fly-ash,100,50,8,2,0,4,0,0,164
+FA-slag,93,47,10,4,3,1,1,1,160
+slag,163,74,15,5,7,4,1,1,270
+mixed/other-AAM,145,48,11,3,4,5,2,3,221
+stabilized-soil,34,13,2,2,0,1,0,0,52
+metakaolin/clay,25,12,2,0,0,1,0,0,40
+biomass-ash,25,6,0,0,0,2,0,0,33
+recycled-aggregate,20,4,2,2,0,2,0,0,30
+one-part,14,6,0,1,0,0,0,0,21
+tailings,4,3,0,1,0,0,0,0,8
+red-mud,6,1,0,0,0,0,0,0,7
