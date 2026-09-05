@@ -147,3 +147,15 @@ CURRENT STATUS
 - DOI completion for SD/SP records — **pending** (Stage 5 extraction pass).
 
 *Stage 3 (initial execution) complete. STOP per protocol. Stage 4 (taxonomy development) can start from this corpus; pending items above do not block taxonomy design but must close before Stage 9 writing.*
+
+## 2d. POST-FREEZE AMENDMENT — duplicate-report audit (31 Aug 2026, referee-response revision)
+
+A systematic post-freeze duplicate audit (DOI matching incl. DOIs embedded in fallback record titles; title similarity with year+venue confirmation; full pair-level evidence in `stage5/duplicate_audit.csv`) identified **52 duplicate report pairs** inside the frozen 729-record Core Corpus. In every pair the duplicate is a fallback-harvest record (26 ScienceDirect, 24 Crossref, 2 SpringerLink) whose Scopus twin escaped the merge because the fallback title was abbreviated/truncated. Resolution: the Scopus record is canonical; duplicates are flagged in `extraction_master.csv` (`duplicate_of` column), never deleted.
+
+**Corrected PRISMA accounting (records vs studies, per PRISMA 2020):**
+- Records identified: 774 (Scopus A) + 440 (fallback: SD 320, Crossref 100, Springer 20) = 1,214 (+13 IEEE conference records excluded at source, EC4)
+- Duplicate records removed before screening: 320 → **894 unique records screened**
+- Removed during screening: 3 duplicates (DUPLICATE-SD265/277/71) · Excluded: 104 (EC1 4, EC2 21, EC3 28, EC4 14, EC5 31, EC7/venue-quality 6) · Context Corpus: 58 → **729 records included**
+- Duplicate reports identified during synthesis: 52 → **677 unique primary studies** (all corpus-wide statistics recomputed on n = 677)
+
+Check: 3 + 104 + 58 + 729 = 894 ✓ · 729 − 52 = 677 ✓
